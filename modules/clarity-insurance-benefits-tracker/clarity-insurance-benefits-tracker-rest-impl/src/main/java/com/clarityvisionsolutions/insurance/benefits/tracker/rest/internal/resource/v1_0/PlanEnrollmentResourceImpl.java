@@ -35,7 +35,7 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.annotations.ServiceScope;
 
-import javax.ws.rs.core.Response;
+import jakarta.ws.rs.core.Response;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.*;

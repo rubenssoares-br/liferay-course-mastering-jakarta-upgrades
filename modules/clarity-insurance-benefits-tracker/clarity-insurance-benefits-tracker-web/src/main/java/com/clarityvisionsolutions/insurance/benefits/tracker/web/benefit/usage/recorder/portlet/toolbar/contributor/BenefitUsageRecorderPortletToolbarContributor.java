@@ -14,10 +14,10 @@ import com.liferay.portal.kernel.util.WebKeys;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.portlet.PortletRequest;
-import javax.portlet.PortletResponse;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderResponse;
+import jakarta.portlet.PortletRequest;
+import jakarta.portlet.PortletResponse;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderResponse;
 
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
@@ -28,7 +28,7 @@ import org.osgi.service.component.annotations.Reference;
 @Component(
 	immediate = true,
 	property = {
-		"javax.portlet.name=" + InsuranceBenefitsTrackerPortletKeys.IBT_BENEFIT_USAGE_RECORDER,
+		"jakarta.portlet.name=" + InsuranceBenefitsTrackerPortletKeys.IBT_BENEFIT_USAGE_RECORDER,
 		"mvc.render.command.name=/benefit-usage/view"
 	},
 	service = PortletToolbarContributor.class

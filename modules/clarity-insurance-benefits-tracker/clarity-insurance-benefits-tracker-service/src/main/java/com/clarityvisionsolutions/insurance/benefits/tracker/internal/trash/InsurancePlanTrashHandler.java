@@ -40,8 +40,8 @@ import com.liferay.trash.constants.TrashActionKeys;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
-import javax.portlet.PortletRequest;
-import javax.portlet.PortletURL;
+import jakarta.portlet.PortletRequest;
+import jakarta.portlet.PortletURL;
 import java.util.ArrayList;
 import java.util.List;
 

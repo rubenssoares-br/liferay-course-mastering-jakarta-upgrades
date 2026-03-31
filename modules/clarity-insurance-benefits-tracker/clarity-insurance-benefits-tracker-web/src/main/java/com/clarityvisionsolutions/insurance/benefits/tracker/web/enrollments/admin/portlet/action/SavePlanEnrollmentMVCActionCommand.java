@@ -21,8 +21,8 @@ import java.text.SimpleDateFormat;
 
 import java.util.Date;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
 
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
@@ -32,7 +32,7 @@ import org.osgi.service.component.annotations.Reference;
  */
 @Component(
 	property = {
-		"javax.portlet.name=" + InsuranceBenefitsTrackerPortletKeys.IBT_ENROLLMENT_ADMIN,
+		"jakarta.portlet.name=" + InsuranceBenefitsTrackerPortletKeys.IBT_ENROLLMENT_ADMIN,
 		"mvc.command.name=/plan-enrollments/save"
 	},
 	service = MVCActionCommand.class

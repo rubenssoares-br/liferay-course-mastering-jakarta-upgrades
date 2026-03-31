@@ -12,10 +12,10 @@ import com.liferay.account.model.AccountEntry;
 import com.liferay.asset.kernel.model.BaseAssetRenderer;
 import com.liferay.portal.kernel.util.Validator;
 
-import javax.portlet.PortletRequest;
-import javax.portlet.PortletResponse;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.portlet.PortletRequest;
+import jakarta.portlet.PortletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.util.Locale;
 
 /**

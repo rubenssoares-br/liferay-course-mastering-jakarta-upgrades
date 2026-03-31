@@ -17,7 +17,7 @@ import com.liferay.portal.vulcan.util.JaxRsLinkUtil;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
-import javax.ws.rs.core.UriInfo;
+import jakarta.ws.rs.core.UriInfo;
 import java.util.HashMap;
 import java.util.Map;
 

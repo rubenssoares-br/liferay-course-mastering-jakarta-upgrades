@@ -2,4 +2,6 @@ Bundle-Name: Clarity Vision Solutions :: Insurance Benefits Tracker :: REST:: Te
 Bundle-SymbolicName: com.clarityvisionsolutions.insurance.benefits.tracker.rest.test
 Bundle-Version: 1.0.0
 -includeresource: com.clarityvisionsolutions.insurance.benefits.tracker.rest.client.jar=../clarity-insurance-benefits-tracker-rest-client/build/libs/com.clarityvisionsolutions.insurance.benefits.tracker.rest.client-1.0.0.jar;lib:=true
--provider-policy: ${replacestring;${range;[==,==]};.*,(.*)];$1}
+-provider-policy:\
+	${replacestring;[="",\
+	${range;[=""

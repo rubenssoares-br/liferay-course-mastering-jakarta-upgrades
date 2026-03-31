@@ -4,7 +4,7 @@ import com.clarityvisionsolutions.insurance.benefits.tracker.constants.Insurance
 
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
 
-import javax.portlet.Portlet;
+import jakarta.portlet.Portlet;
 
 import org.osgi.service.component.annotations.Component;
 
@@ -16,14 +16,14 @@ import org.osgi.service.component.annotations.Component;
 		"com.liferay.portlet.display-category=category.sample",
 		"com.liferay.portlet.header-portlet-css=/css/main.css",
 		"com.liferay.portlet.instanceable=true",
-		"javax.portlet.display-name=PlanEnrollmentAdmin",
-		"javax.portlet.init-param.mvc-command-names-default-views=/plan-enrollments/view",
-		"javax.portlet.init-param.template-path=/META-INF/resources/",
-		"javax.portlet.init-param.view-template=/plan-enrollments/view.jsp",
-		"javax.portlet.name=" + InsuranceBenefitsTrackerPortletKeys.IBT_ENROLLMENT_ADMIN,
-		"javax.portlet.resource-bundle=content.Language",
-		"javax.portlet.security-role-ref=power-user,user",
-		"javax.portlet.version=3.0"
+		"jakarta.portlet.display-name=PlanEnrollmentAdmin",
+		"jakarta.portlet.init-param.mvc-command-names-default-views=/plan-enrollments/view",
+		"jakarta.portlet.init-param.template-path=/META-INF/resources/",
+		"jakarta.portlet.init-param.view-template=/plan-enrollments/view.jsp",
+		"jakarta.portlet.name=" + InsuranceBenefitsTrackerPortletKeys.IBT_ENROLLMENT_ADMIN,
+		"jakarta.portlet.resource-bundle=content.Language",
+		"jakarta.portlet.security-role-ref=power-user,user",
+		"jakarta.portlet.version=4.0"
 	},
 	service = Portlet.class
 )

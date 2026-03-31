@@ -20,10 +20,10 @@ import com.liferay.portal.kernel.workflow.WorkflowConstants;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -31,7 +31,7 @@ import java.util.List;
  */
 @Component(
 	property = {
-		"javax.portlet.name=" + InsuranceBenefitsTrackerPortletKeys.IBT_PLANS_ADMIN,
+		"jakarta.portlet.name=" + InsuranceBenefitsTrackerPortletKeys.IBT_PLANS_ADMIN,
 		"mvc.command.name=/", "mvc.command.name=/insurance-plans/view"
 	},
 	service = MVCRenderCommand.class

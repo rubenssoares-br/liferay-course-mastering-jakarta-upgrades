@@ -19,7 +19,7 @@ import org.osgi.service.component.annotations.Reference;
  * @author Drew Brokke
  */
 @Component(
-	property = "javax.portlet.name=" + InsuranceBenefitsTrackerPortletKeys.IBT_PLANS_ADMIN,
+	property = "jakarta.portlet.name=" + InsuranceBenefitsTrackerPortletKeys.IBT_PLANS_ADMIN,
 	service = AssetRendererFactory.class
 )
 public class InsurancePlanAssetRendererFactory
