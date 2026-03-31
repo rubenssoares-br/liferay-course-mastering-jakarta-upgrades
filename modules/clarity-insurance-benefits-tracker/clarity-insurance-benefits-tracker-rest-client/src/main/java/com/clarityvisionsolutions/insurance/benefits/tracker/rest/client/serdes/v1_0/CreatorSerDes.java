@@ -3,13 +3,13 @@ package com.clarityvisionsolutions.insurance.benefits.tracker.rest.client.serdes
 import com.clarityvisionsolutions.insurance.benefits.tracker.rest.client.dto.v1_0.Creator;
 import com.clarityvisionsolutions.insurance.benefits.tracker.rest.client.json.BaseJSONParser;
 
+import jakarta.annotation.Generated;
+
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 import java.util.TreeMap;
-
-import javax.annotation.Generated;
 
 /**
  * @author dnebinger

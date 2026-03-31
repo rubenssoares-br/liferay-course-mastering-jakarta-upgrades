@@ -9,6 +9,8 @@ import com.clarityvisionsolutions.insurance.benefits.tracker.rest.client.problem
 import com.clarityvisionsolutions.insurance.benefits.tracker.rest.client.serdes.v1_0.InsurancePlanSerDes;
 import com.clarityvisionsolutions.insurance.benefits.tracker.rest.client.serdes.v1_0.PlanEnrollmentSerDes;
 
+import jakarta.annotation.Generated;
+
 import java.net.URL;
 
 import java.util.LinkedHashMap;
@@ -18,8 +20,6 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import javax.annotation.Generated;
 
 /**
  * @author dnebinger

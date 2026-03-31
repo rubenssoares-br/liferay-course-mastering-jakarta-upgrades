@@ -2,9 +2,9 @@ package com.clarityvisionsolutions.insurance.benefits.tracker.rest.client.proble
 
 import com.clarityvisionsolutions.insurance.benefits.tracker.rest.client.json.BaseJSONParser;
 
-import java.util.Objects;
+import jakarta.annotation.Generated;
 
-import javax.annotation.Generated;
+import java.util.Objects;
 
 /**
  * @author dnebinger

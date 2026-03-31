@@ -3,13 +3,13 @@ package com.clarityvisionsolutions.insurance.benefits.tracker.rest.client.dto.v1
 import com.clarityvisionsolutions.insurance.benefits.tracker.rest.client.function.UnsafeSupplier;
 import com.clarityvisionsolutions.insurance.benefits.tracker.rest.client.serdes.v1_0.InsurancePlanSerDes;
 
+import jakarta.annotation.Generated;
+
 import java.io.Serializable;
 
 import java.util.Date;
 import java.util.Map;
 import java.util.Objects;
-
-import javax.annotation.Generated;
 
 /**
  * @author dnebinger

@@ -1,8 +1,8 @@
 package com.clarityvisionsolutions.insurance.benefits.tracker.rest.internal.jaxrs.application;
 
-import javax.annotation.Generated;
+import jakarta.annotation.Generated;
 
-import javax.ws.rs.core.Application;
+import jakarta.ws.rs.core.Application;
 
 import org.osgi.service.component.annotations.Component;
 

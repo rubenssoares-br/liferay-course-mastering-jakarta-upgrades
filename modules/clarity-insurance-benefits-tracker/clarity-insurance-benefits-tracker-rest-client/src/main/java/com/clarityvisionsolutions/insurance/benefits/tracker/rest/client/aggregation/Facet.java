@@ -1,9 +1,9 @@
 package com.clarityvisionsolutions.insurance.benefits.tracker.rest.client.aggregation;
 
+import jakarta.annotation.Generated;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.annotation.Generated;
 
 /**
  * @author dnebinger

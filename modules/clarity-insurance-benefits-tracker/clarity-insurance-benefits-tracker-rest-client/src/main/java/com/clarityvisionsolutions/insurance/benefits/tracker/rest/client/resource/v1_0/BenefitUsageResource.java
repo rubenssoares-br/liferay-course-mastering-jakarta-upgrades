@@ -4,6 +4,8 @@ import com.clarityvisionsolutions.insurance.benefits.tracker.rest.client.dto.v1_
 import com.clarityvisionsolutions.insurance.benefits.tracker.rest.client.http.HttpInvoker;
 import com.clarityvisionsolutions.insurance.benefits.tracker.rest.client.problem.Problem;
 
+import jakarta.annotation.Generated;
+
 import java.net.URL;
 
 import java.util.LinkedHashMap;
@@ -12,8 +14,6 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import javax.annotation.Generated;
 
 /**
  * @author dnebinger

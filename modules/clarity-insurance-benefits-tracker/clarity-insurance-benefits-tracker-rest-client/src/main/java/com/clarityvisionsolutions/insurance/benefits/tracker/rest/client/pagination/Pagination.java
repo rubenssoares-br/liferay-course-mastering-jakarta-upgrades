@@ -1,6 +1,6 @@
 package com.clarityvisionsolutions.insurance.benefits.tracker.rest.client.pagination;
 
-import javax.annotation.Generated;
+import jakarta.annotation.Generated;
 
 /**
  * @author dnebinger
