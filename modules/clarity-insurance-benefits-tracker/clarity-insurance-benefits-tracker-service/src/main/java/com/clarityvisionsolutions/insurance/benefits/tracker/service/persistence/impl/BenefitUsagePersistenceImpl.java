@@ -1930,16 +1930,6 @@ public class BenefitUsagePersistenceImpl
 			return findByGroupId(groupId, start, end, orderByComparator);
 		}
 
-		if ((start == QueryUtil.ALL_POS) && (end == QueryUtil.ALL_POS) &&
-			isPermissionsInMemoryFilterEnabled()) {
-
-			return InlineSQLHelperUtil.filter(
-				findByGroupId(
-					groupId, QueryUtil.ALL_POS, QueryUtil.ALL_POS,
-					orderByComparator),
-				groupId);
-		}
-
 		StringBundler sb = null;
 
 		if (orderByComparator != null) {
@@ -2297,14 +2287,6 @@ public class BenefitUsagePersistenceImpl
 	public int filterCountByGroupId(long groupId) {
 		if (!InlineSQLHelperUtil.isEnabled(groupId)) {
 			return countByGroupId(groupId);
-		}
-
-		if (isPermissionsInMemoryFilterEnabled()) {
-			List<BenefitUsage> benefitUsages = findByGroupId(groupId);
-
-			benefitUsages = InlineSQLHelperUtil.filter(benefitUsages, groupId);
-
-			return benefitUsages.size();
 		}
 
 		StringBundler sb = new StringBundler(2);
@@ -3374,16 +3356,6 @@ public class BenefitUsagePersistenceImpl
 			return findByG_S(groupId, status, start, end, orderByComparator);
 		}
 
-		if ((start == QueryUtil.ALL_POS) && (end == QueryUtil.ALL_POS) &&
-			isPermissionsInMemoryFilterEnabled()) {
-
-			return InlineSQLHelperUtil.filter(
-				findByG_S(
-					groupId, status, QueryUtil.ALL_POS, QueryUtil.ALL_POS,
-					orderByComparator),
-				groupId);
-		}
-
 		StringBundler sb = null;
 
 		if (orderByComparator != null) {
@@ -3760,14 +3732,6 @@ public class BenefitUsagePersistenceImpl
 	public int filterCountByG_S(long groupId, int status) {
 		if (!InlineSQLHelperUtil.isEnabled(groupId)) {
 			return countByG_S(groupId, status);
-		}
-
-		if (isPermissionsInMemoryFilterEnabled()) {
-			List<BenefitUsage> benefitUsages = findByG_S(groupId, status);
-
-			benefitUsages = InlineSQLHelperUtil.filter(benefitUsages, groupId);
-
-			return benefitUsages.size();
 		}
 
 		StringBundler sb = new StringBundler(3);
@@ -4327,16 +4291,6 @@ public class BenefitUsagePersistenceImpl
 			return findByG_NotS(groupId, status, start, end, orderByComparator);
 		}
 
-		if ((start == QueryUtil.ALL_POS) && (end == QueryUtil.ALL_POS) &&
-			isPermissionsInMemoryFilterEnabled()) {
-
-			return InlineSQLHelperUtil.filter(
-				findByG_NotS(
-					groupId, status, QueryUtil.ALL_POS, QueryUtil.ALL_POS,
-					orderByComparator),
-				groupId);
-		}
-
 		StringBundler sb = null;
 
 		if (orderByComparator != null) {
@@ -4713,14 +4667,6 @@ public class BenefitUsagePersistenceImpl
 	public int filterCountByG_NotS(long groupId, int status) {
 		if (!InlineSQLHelperUtil.isEnabled(groupId)) {
 			return countByG_NotS(groupId, status);
-		}
-
-		if (isPermissionsInMemoryFilterEnabled()) {
-			List<BenefitUsage> benefitUsages = findByG_NotS(groupId, status);
-
-			benefitUsages = InlineSQLHelperUtil.filter(benefitUsages, groupId);
-
-			return benefitUsages.size();
 		}
 
 		StringBundler sb = new StringBundler(3);
@@ -6428,16 +6374,6 @@ public class BenefitUsagePersistenceImpl
 				orderByComparator);
 		}
 
-		if ((start == QueryUtil.ALL_POS) && (end == QueryUtil.ALL_POS) &&
-			isPermissionsInMemoryFilterEnabled()) {
-
-			return InlineSQLHelperUtil.filter(
-				findByG_PE_S(
-					groupId, planEnrollmentId, status, QueryUtil.ALL_POS,
-					QueryUtil.ALL_POS, orderByComparator),
-				groupId);
-		}
-
 		StringBundler sb = null;
 
 		if (orderByComparator != null) {
@@ -6838,15 +6774,6 @@ public class BenefitUsagePersistenceImpl
 
 		if (!InlineSQLHelperUtil.isEnabled(groupId)) {
 			return countByG_PE_S(groupId, planEnrollmentId, status);
-		}
-
-		if (isPermissionsInMemoryFilterEnabled()) {
-			List<BenefitUsage> benefitUsages = findByG_PE_S(
-				groupId, planEnrollmentId, status);
-
-			benefitUsages = InlineSQLHelperUtil.filter(benefitUsages, groupId);
-
-			return benefitUsages.size();
 		}
 
 		StringBundler sb = new StringBundler(4);
@@ -7454,16 +7381,6 @@ public class BenefitUsagePersistenceImpl
 				orderByComparator);
 		}
 
-		if ((start == QueryUtil.ALL_POS) && (end == QueryUtil.ALL_POS) &&
-			isPermissionsInMemoryFilterEnabled()) {
-
-			return InlineSQLHelperUtil.filter(
-				findByG_PE_NotS(
-					groupId, planEnrollmentId, status, QueryUtil.ALL_POS,
-					QueryUtil.ALL_POS, orderByComparator),
-				groupId);
-		}
-
 		StringBundler sb = null;
 
 		if (orderByComparator != null) {
@@ -7866,15 +7783,6 @@ public class BenefitUsagePersistenceImpl
 
 		if (!InlineSQLHelperUtil.isEnabled(groupId)) {
 			return countByG_PE_NotS(groupId, planEnrollmentId, status);
-		}
-
-		if (isPermissionsInMemoryFilterEnabled()) {
-			List<BenefitUsage> benefitUsages = findByG_PE_NotS(
-				groupId, planEnrollmentId, status);
-
-			benefitUsages = InlineSQLHelperUtil.filter(benefitUsages, groupId);
-
-			return benefitUsages.size();
 		}
 
 		StringBundler sb = new StringBundler(4);
@@ -9575,16 +9483,6 @@ public class BenefitUsagePersistenceImpl
 				groupId, userId, status, start, end, orderByComparator);
 		}
 
-		if ((start == QueryUtil.ALL_POS) && (end == QueryUtil.ALL_POS) &&
-			isPermissionsInMemoryFilterEnabled()) {
-
-			return InlineSQLHelperUtil.filter(
-				findByG_U_S(
-					groupId, userId, status, QueryUtil.ALL_POS,
-					QueryUtil.ALL_POS, orderByComparator),
-				groupId);
-		}
-
 		StringBundler sb = null;
 
 		if (orderByComparator != null) {
@@ -9944,16 +9842,6 @@ public class BenefitUsagePersistenceImpl
 		if (!InlineSQLHelperUtil.isEnabled(groupId)) {
 			return findByG_U_S(
 				groupId, userId, statuses, start, end, orderByComparator);
-		}
-
-		if ((start == QueryUtil.ALL_POS) && (end == QueryUtil.ALL_POS) &&
-			isPermissionsInMemoryFilterEnabled()) {
-
-			return InlineSQLHelperUtil.filter(
-				findByG_U_S(
-					groupId, userId, statuses, QueryUtil.ALL_POS,
-					QueryUtil.ALL_POS, orderByComparator),
-				groupId);
 		}
 
 		if (statuses == null) {
@@ -10450,15 +10338,6 @@ public class BenefitUsagePersistenceImpl
 			return countByG_U_S(groupId, userId, status);
 		}
 
-		if (isPermissionsInMemoryFilterEnabled()) {
-			List<BenefitUsage> benefitUsages = findByG_U_S(
-				groupId, userId, status);
-
-			benefitUsages = InlineSQLHelperUtil.filter(benefitUsages, groupId);
-
-			return benefitUsages.size();
-		}
-
 		StringBundler sb = new StringBundler(4);
 
 		sb.append(_FILTER_SQL_COUNT_BENEFITUSAGE_WHERE);
@@ -10515,13 +10394,6 @@ public class BenefitUsagePersistenceImpl
 	public int filterCountByG_U_S(long groupId, long userId, int[] statuses) {
 		if (!InlineSQLHelperUtil.isEnabled(groupId)) {
 			return countByG_U_S(groupId, userId, statuses);
-		}
-
-		if (isPermissionsInMemoryFilterEnabled()) {
-			List<BenefitUsage> benefitUsages = InlineSQLHelperUtil.filter(
-				findByG_U_S(groupId, userId, statuses), groupId);
-
-			return benefitUsages.size();
 		}
 
 		if (statuses == null) {
@@ -11144,16 +11016,6 @@ public class BenefitUsagePersistenceImpl
 				groupId, userId, status, start, end, orderByComparator);
 		}
 
-		if ((start == QueryUtil.ALL_POS) && (end == QueryUtil.ALL_POS) &&
-			isPermissionsInMemoryFilterEnabled()) {
-
-			return InlineSQLHelperUtil.filter(
-				findByG_U_NotS(
-					groupId, userId, status, QueryUtil.ALL_POS,
-					QueryUtil.ALL_POS, orderByComparator),
-				groupId);
-		}
-
 		StringBundler sb = null;
 
 		if (orderByComparator != null) {
@@ -11547,15 +11409,6 @@ public class BenefitUsagePersistenceImpl
 	public int filterCountByG_U_NotS(long groupId, long userId, int status) {
 		if (!InlineSQLHelperUtil.isEnabled(groupId)) {
 			return countByG_U_NotS(groupId, userId, status);
-		}
-
-		if (isPermissionsInMemoryFilterEnabled()) {
-			List<BenefitUsage> benefitUsages = findByG_U_NotS(
-				groupId, userId, status);
-
-			benefitUsages = InlineSQLHelperUtil.filter(benefitUsages, groupId);
-
-			return benefitUsages.size();
 		}
 
 		StringBundler sb = new StringBundler(4);
